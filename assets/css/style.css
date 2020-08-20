@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
  
-h1, h2, h4, a, label, p{
+h1, h2, h3, h4, a, label, select, button, p{
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: justify;
 }
@@ -17,6 +17,7 @@ h1 {
 nav {
     width: 100%;
     background-color: #d45f68;
+    background-size: inherit;
     position: fixed;
     top: 0;
     z-index: 100;
@@ -25,7 +26,7 @@ nav {
 nav ul{
     text-align: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: first baseline;
     padding: 0px;
     list-style: none;
 }
@@ -40,17 +41,19 @@ nav a{
 nav a:hover{
     color: black;
 }
- 
+
 #logoGen{
     width: 100px;
     height: 30px;
-    margin-right: 180px;
+    margin-right: 80px;
+    margin-left: 80px;
 }
+
+/* sobre generation*/
  
 #sobreGen{
     margin-right: 100px;
     margin-left: 100px;
-    margin-top: 110px;
 }
  
 #container-sobreGen{
@@ -61,14 +64,292 @@ nav a:hover{
 }
  
 .text-center{
-    text-align: center;
-    background-color: #d45f68;
+    text-align: start;
+    color: #0074B9;
+    font-size: 40px;
+    margin-top: 150px;
 }
  
 #texto-sobreGen{
     margin-right: 20px;
+    font-size: 22px;
+    text-align: center;
+    color:  #9D8C09;
+    
 }
  
-#video-sobreGen{
-    margin-left: 10px;
+#video-sobreGen {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#generation #generation-div-imagem {
+    background-image: url("https://i.imgur.com/8geMcyw.jpg");
+    background-size: cover;
+    width: 625px;
+    height: 412px;
+    border-radius: 5px;
+}
+
+/* sobre o curso */
+
+#sobreCurso{
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+#sobreCurso .container{
+    display: flex;
+    align-items: center;
+
+}
+
+#sobreCurso h2{
+    font-size: 42px;
+    color: #0074B9;
+    text-align: center;
+}
+
+#sobreCurso p{
+    font-size: 22px;
+    width: 560px;
+    color:  #9D8C09;
+}
+
+#sobreCurso #curso-div-imagem{
+    background-image: url("https://imgur.com/8geMcyw.jpg");
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    margin-left: 100px; 
+    margin-right: 20px;   
+}
+
+#curso-div-texto{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+    
+}
+
+#curso p{
+    text-align: justify;
+    margin-left: 20px;
+}
+
+#video{
+    margin-top: 100px;
+    width: 1010;
+    height: 569;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe{
+    border-radius: 10px;
+}
+
+/* curriculo */
+
+#curriculo{
+    margin-top: 50px;
+}
+
+#curriculo h2{
+    text-align: center;
+    color: #0074B9;
+    font-style: bold;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+#cards{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#curriculo .card{
+    width: 300px;
+    height: 400px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    background-color: #0075b923;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#curriculo .card h3{
+    text-align: center;
+    color: #DB6247;
+    font-style: bold;
+    font-size: 35px;
+}
+
+#curriculo .card p{
+    text-align: center;
+    font-size: 25px;
+    color:  #9D8C09;
+}
+
+/* mercado */
+
+#mercado{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+#mercado .container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+#mercado h2{
+    text-align: left;
+    font-size: 42px;
+    color: #0074B9;
+    margin-left: 100px;
+}
+
+#mercado #mercado-div-imagem{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png");
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+#mercado #mercado-div-texto{
+    width: 600px;
+    height: 250px;
+    display: flex;
+    align-items: stretch;
+    margin-right: 100px;
+    color:  #9D8C09;
+}
+
+#mercado #mercado-div-texto p{
+    text-align: justify;
+    font-size: 24px;
+}
+
+/* inscreva-se */
+
+#participe{
+    margin-top: 50px;
+    
+   
+}
+
+#participe h2{
+    color: #0074B9;
+    font-size: 42px;
+    text-align: center;
+    
+    
+}
+
+.container-for {
+    border-top: 3px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-bottom: 5px solid;
+    border-color: #0074B9;
+    border-radius: 5px;  
+    width: 650px;
+    margin-left: 350px;
+    
+}
+
+#participe form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin-left: 180px;
+    
+}
+
+label{
+    
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #9D8C09
+    
+}
+
+input{
+    border-inline-end-style: double;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    width: 500px;
+    font-size: 20px;
+}
+
+input:focus{
+    outline: none;
+}
+
+select{
+    margin-bottom: 70px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+#selects{
+    display: flex;
+}
+
+#selects div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10px 10px;
+}
+
+button{
+    border-radius: 45px;
+    width: 200px;
+    padding: 35px 175px;
+    font-size: 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+hr{
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+/* rodapé */
+
+#redes-sociais{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-bottom: 20px;
+}
+
+#redes-sociais img{
+    width: 50px;
+    height: 50px;
+}
+
+footer p{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 24px;
 }
